@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+
+      <div class="header_nav">
+        <a class="logo" href="#">Kelvin</a>
+        <div id="nav" class="nav">
+          <ul class="nav_list">
+            <li class="nav_item"><a class="nav_link active" href="#">Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="#">Works</a></li>
+            <li class="nav_item"><a class="nav_link" href="#">Services</a></li>
+            <li class="nav_item"><a class="nav_link" href="#">About</a></li>
+            <li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
+          </ul>
+          <button id="nav_btn" class="nav_button"> 
+            <img id="nav_btn_img" src="./img/icons/nav-open.svg" alt="кнопка открытия"> 
+          </button>
+        </div>
+      </div>
+       
+      <div class="header_row">
+        <div class="header_content" data-aos="fade-up"  >
+            <h1 class="header_heading">Kelvin Kramer<br> <span>Designer & Developer</span> </h1>
+            <p>Im a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.</p>
+        </div>
+        <div class="header_img" data-aos="fade-left">
+          <picture> 
+            <source media=" (max-width: 799px)" srcset="./img/header/hero-mob.png">
+            <img src="./img/header/hero.png" alt="">
+          </picture>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Секция Услуги -->
+  <section class="services">
+    <div class="container">
+      <div class="services_row">
+
+        <div class="swrvice_card" data-aos="fade-down">
+          <img class="services_card_img" src="./img/services/01.svg" alt="картинка">
+          <h3 class="services_card_title">UI/UX Design</h3>
+          <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
+        </div>
+
+        <div class="swrvice_card" data-aos="fade-down">
+          <img class="services_card_img" src="./img/services/02.svg" alt="картинка">
+          <h3 class="services_card_title">Development</h3>
+          <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
+        </div>
+
+        <div class="swrvice_card" data-aos="fade-down">
+          <img class="services_card_img" src="./img/services/03.svg" alt="картинка">
+          <h3 class="services_card_title">software testing</h3>
+          <p>Our design is translated into comprehensive digital environments built on latest development standards.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция Портфолио -->
+  <section class="portfolio">
+    <div class="container">
+
+      <div class="portfolio_title">
+        <h2 class="title_1">Portfolio</h2>
+      </div>
+
+      <div class="project" data-aos="flip-up">
+        <img class="project_img" src="./img/portfolio/01.jpg" alt="сайт портфолио">
+        <h3 class="project_title"><a class="project_link" href="#">Online fashion store - Homepage</a></h3>
+      </div>
+
+      <div class="project" data-aos="flip-up">
+        <img class="project_img" src="./img/portfolio/02.jpg" alt="сайт портфолио">
+        <h3 class="project_title"><a class="project_link" href="#">Reebok Store - Concept</a></h3>
+      </div>
+
+      <div class="project" data-aos="flip-up">
+        <img class="project_img" src="./img/portfolio/03.jpg" alt="сайт портфолио">
+        <h3 class="project_title"><a class="project_link" href="#">Braun Landing Page - Concept</a></h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Секция Контакты -->
+  <section class="contacts">
+    <div class="container">
+
+      <div class="contacts_title">
+        <h3 class="title_1">Contacts</h3>
+      </div>
+
+      <div class="contacts_content">
+        <p>Want to know more or just chat? <br> You are welcome!</p>
+      </div>
+
+      <div class="contacts_btn" data-aos="zoom-in">
+        <a class="btn" href="#!">Send message</a>
+      </div>
+
+      <div class="contacts_socials">
+        <a href="#"><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="./img/socials/Instargam.svg" alt="Instargam"></a>
+        <a href="#"><img src="./img/socials/Behance.svg" alt="Behance"></a>
+        <a href="#"><img src="./img/socials/Dribble.svg" alt="Dribble"></a>
+      </div>
+
+      <div class="contacts_footer">
+        <p class="footer_content">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
