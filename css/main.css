@@ -1,0 +1,247 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  /* border: 1px green solid; */
+} 
+
+body{
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 14px;
+  padding-bottom: 90px;
+}
+
+.container{
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+  /* border: 2px red solid; */
+}
+
+/* Шапка сайта */
+.header{
+  padding-top: 46px;
+  background-color: #F1F1F1;
+  /* border: 3px black solid; */
+}
+
+.header_nav{
+  margin-bottom: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo{
+  position: relative;
+  padding: 0 12px 3px 0;  
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
+
+.logo::after{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content:'';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #FDA300;
+  border-radius: 50%;
+}
+
+.nav_list{
+  display: flex;
+  column-gap: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav_link{
+  color: #000;
+}
+
+.nav_link.active{
+  color: #606060; 
+}
+
+.nav_button{
+  display: none;  
+}
+
+.header_row{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header_content{
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+.header_heading{
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.header_content p{
+  font-weight: 400;
+  line-height: 2;
+}
+
+/* Секция Услуги */
+.services{
+  padding: 90px 0;
+  /* border: 3px black solid; */
+}
+
+.services_row{
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 0;
+  min-width: 315px; 
+}
+
+.swrvice_card{
+  width: 370px;
+} 
+
+.services_card_img{
+  margin-bottom: 30px;
+}
+
+.services_card_title{
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.swrvice_card p{
+  line-height: 2;
+}
+
+/* Секция Портфолио */
+.portfolio {
+  padding-top: 90px;
+  padding-bottom: 1px;
+  background: #F1F1F1;
+  /* border: 3px black solid; */
+}
+
+.portfolio_title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.title_1 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+  color: #070707;
+}
+
+.project {
+  margin-bottom: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.project_img {
+  margin-bottom: 40px;
+  display: block;
+}
+
+.project_link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #070707;
+  text-decoration-line: underline;
+}
+
+/* Секция Контакты */
+
+.contacts {
+  padding-top: 90px;
+  text-align: center;
+  /* border: 3px black solid; */
+}
+
+.contacts_title {
+  margin-bottom: 40px;
+}
+
+.contacts_content p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contacts_btn {
+  margin: 40px auto 70px auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 180px;
+  height: 42px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  background: #070707;
+  border-radius: 30px;
+  line-height: 2.3;
+
+  transition: background-color 0.2s ease-in,  top 0.2s ease-in   ;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #323232;
+}
+
+.btn:active{
+  position: relative;
+  top: 1px;
+  background-color: #000;
+}
+
+
+.contacts_socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  margin-bottom: 40px;
+}
+
+.contacts_socials img{
+  width: 40px;
+  height: 40px;
+}
+
+.footer_content {
+  color: #828282;
+}
